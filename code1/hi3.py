@@ -46,7 +46,7 @@ def main():
             else:
                 current_color = color["white"]
 
-        screen.fill(current_color)
+        screen.fill((0,0,0))
         pygame.draw.rect(screen,current_color, (x, y, sprite_width, sprite_height))
         pygame.display.flip()
         clock.tick(60)
